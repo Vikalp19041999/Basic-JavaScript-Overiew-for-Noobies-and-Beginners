@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <body> 		 
+        <form name="Form" action="/submit.php" onsubmit="return formValidation()" method="post"> 
+            
+            <p>Name: <input type="text" size=65 name="Name"> </p><br>	 
+            <p>Address: <input type="text" size=65 name="Address"> </p><br> 
+            <p>E-mail ID: <input type="text" size=65 name="EMail"> </p><br> 		
+            <p>SELECT YOUR COURSE 
+                <select type="text" value="" name="Subject"> 
+                    <option>BTECH</option> 
+                    <option>B.COM</option> 
+                </select></p><br><br> 
+            <p>Comments: <textarea cols="55" name="Comment"> </textarea></p> 
+            <p><input type="submit" value="send" name="Submit">	 
+                <input type="reset" value="Reset" name="Reset"> 
+            </p>		 
+        </form>
+        <script>
+            function formValidation(){
+                var name = document.forms["Form"]["Name"];
+                var address = document.forms["Form"]["Address"];
+                var email = document.forms["Form"]["EMail"];
+                var course = document.forms["Form"]["Subject"];
+                if(name.value == ""){
+                    window.alert("Enter your name");
+                    name.focus();
+                    return false;
+                }
+                if(address.value == ""){
+                    window.alert("Enter your Address");
+                    address.focus();
+                    return false;
+                }
+                if(email.value == ""){
+                    window.alert("Enter your Email ID");
+                    email.focus();
+                    return false;
+                }
+                if(course.selectedIndex < 1){
+                    window.alert("Select any course");
+                    course.focus();
+                    return false;
+                }
+
+                return true;
+            }
+        </script> 
+        </body>
+</html>

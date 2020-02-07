@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo">Your current location co-ordinates</p>
+        <button onclick="getLocation()">Your Location</button>
+        <script>
+            var location = navigator.geolocation;
+            function getLocation(){
+                if(location){
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                }
+                else{
+                    document.getElementById("demo").innerHTML = "Permission denied";
+                }
+            }
+            function showPosition(Position){
+                document.getElementById("demo").innerHTML = "Longitude : " + Position.coords.longitude + "Latitude : " + Position.coords.latitude;
+            }
+        </script>
+    </body>
+</html>

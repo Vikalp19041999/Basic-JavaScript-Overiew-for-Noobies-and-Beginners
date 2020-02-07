@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <input type="number"  id="1">
+    <input type="number"  id="2">
+    <input type="number"  id="3">
+    <button onclick="area()">Result</button>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function area(){
+                var x = document.getElementById("demo");
+                var a = parseInt(document.getElementById("1").value);
+                var b = parseInt(document.getElementById("2").value);
+                var c = parseInt(document.getElementById("3").value);
+                if(a<(b+c) || b<(a+c) || c<(a+c)){
+                    document.write("Invalid");
+                }
+                else{
+                    document.write("Valid");
+                }
+            }
+        </script>
+    </body>
+</html>

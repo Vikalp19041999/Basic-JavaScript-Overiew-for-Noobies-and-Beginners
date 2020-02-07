@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Click the button to see the result</p>
+        <button onclick="getConfirmation()">Confirmation Button</button>
+        <script>
+            function getConfirmation(){
+                var val = confirm("Do you want to continue?");
+                if(val == true){
+                    document.write("Good");
+                    return true;
+                }
+                else{
+                    document.write("Bad");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

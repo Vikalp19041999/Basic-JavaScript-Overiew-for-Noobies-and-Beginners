@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo">This keyword example</p>
+        <script>
+            var person = {
+                name : 'Vikalp',
+                branch : 'CSE',
+                roll_no : '16egics117',
+                full_info : function(){
+                    return this.name + " " + this.branch + " " + this.roll_no;
+                }
+            };
+            document.getElementById("demo").innerHTML = person.full_info();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo">Vicky</p>
+        <button onclick="toClickLeft()">Left Rotation</button>
+        <br>
+        <button onclick="toClickRight()">Right Rotation</button>
+        <script>
+            function toClickLeft(){
+                var x = document.getElementById("demo");
+                var a = x.innerHTML;
+                var s = a.charAt(0);
+                a = a.substring(1);
+                a = a + s.toString();
+                x.innerHTML = a;
+            }
+            function toClickRight(){
+                var x = document.getElementById("demo");
+                var a = x.innerHTML;
+                var l = a.length;
+                var s = a.charAt(l-1);
+                a = a.substring(0,l-1);
+                a = s.toString() + a;
+                x.innerHTML = a;
+            }
+        </script>
+    </body>
+</html>

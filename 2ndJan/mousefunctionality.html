@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Image transitions</p>
+        <img id="demo" src="index1.png" onmouseover="second()" onmouseout="first()">
+        
+        <script>
+            function first(){
+                var h = document.getElementById("demo");
+                h.src = "index1.png"
+            }
+            function second(){
+                var h = document.getElementById("demo");
+                h.src = "index2.png"
+            }
+        </script>
+    </body>
+</html>

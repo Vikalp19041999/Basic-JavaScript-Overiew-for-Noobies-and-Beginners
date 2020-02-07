@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo">Array sorting example</p>
+        <button onclick="myFunction()">Array Sort</button>
+    </body>
+    <script>
+        var a = ["Flutter", "React Native", "Xamarin", "Angular"];
+        document.getElementById("demo").innerHTML = a;
+        function myFunction(){
+            a.sort();
+            a.reverse();
+            document.getElementById("demo").innerHTML = a;
+        }
+    </script>
+</html>

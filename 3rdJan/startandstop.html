@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <img id="demo" src="https://fsb.zobj.net/crop.php?r=kHvoWlhR3f2caLa3voakWYPeshUVqU2xiHBCPe_L7Vr46oCpPeZSi9dw-rIrwp6IzCfbL9QPEBE-KN9qZx-dXDKgYhPZStVZkQcDL4WCSGMNmGjuSOFvR8cD5RP6Z8EvZ1BOWtIsBSM65OSqU68-3prJ__j5MuLTaonQtEFRpytAt3MAB9ItZUah21k" style="left: 0px; position: relative;">
+        <br>
+        <button onclick="reset()">Reset</button>
+        <br>
+        <button onclick="start()">Start</button>
+        <br>
+        <button onclick="stop()">Stop</button>
+        <script>
+            var s,x;
+            function start(){
+                x = document.getElementById("demo");
+                x.style.left = parseInt(x.style.left)+15 +'px';
+                s = setTimeout(start,1);
+            }
+            function stop(){
+                clearTimeout(s);
+            }
+            function reset(){
+                stop();
+                x.style.left = "0px";
+            }
+        </script>
+    </body>
+</html>

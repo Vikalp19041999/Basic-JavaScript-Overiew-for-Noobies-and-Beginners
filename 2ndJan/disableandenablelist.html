@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Disable and Enable List</p>
+        <form>
+            <select id="mySelect">
+              <option>Flutter</option>
+              <option>React Native</option>
+              <option>Xamarin</option>
+              <option>Ionic</option>
+            </select>
+            <br><br>
+            <input type="button" onclick="enable()" value="Enable List">
+            <input type="button" onclick="disable()" value="Disable List">
+        </form>
+        <script>
+            function enable(){
+                document.getElementById("mySelect").disabled = false;
+            }
+            function disable(){
+                document.getElementById("mySelect").disabled = true;
+            }
+        </script>    
+    </body>
+</html>

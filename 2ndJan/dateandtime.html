@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Time and Date Examples</p>
+        <button onclick="dateAndTime()">Date and Time</button>
+        <script>
+            function dateAndTime(){
+                var date = new Date();
+                date.getDay();
+                date.getHours();
+                date.getMinutes();
+                date.getSeconds();
+                document.write(date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear());
+            }
+        </script>
+    </body>
+</html>

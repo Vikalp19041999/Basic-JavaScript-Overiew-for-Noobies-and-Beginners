@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form name="Form">
+        <p>Number 1: <input type="number" id="1"> </p><br>
+        <p>Number 2: <input type="number" id="2"> </p><br>
+    </form>
+    <p id="demo">Calculator</p>
+    <button onclick="multiply()">Multiplication</button><br>
+    <button onclick="division()">Division</button><br>
+    <script>
+        var x = document.getElementById("demo");
+        function multiply(){
+            var a = parseInt(document.getElementById("1").value);
+            var b = parseInt(document.getElementById("2").value);
+            var c = a*b;
+            x.innerHTML = c;
+        }
+        function division(){
+            var a = parseInt(document.getElementById("1").value);
+            var b = parseInt(document.getElementById("2").value);
+            var c = a/b;
+            x.innerHTML = c;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Area of Triangle</p>
+        <button onclick="area()">Area</button>
+        <script>
+            function area(){
+                var a = 5;
+                var b = 6;
+                var c = 7;
+                //Using Heron's formula
+                var s = (a+b+c)/2;
+                var a = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+                document.write(a);
+            }
+        </script>
+    </body>
+</html>

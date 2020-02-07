@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Exception Handling example </p>
+        <button onclick="myFunction()">Example</button>
+        <script>
+            function myFunction(){
+                var a = 100;
+                var b = 0;
+                try {
+                    if(b == 0){
+                        throw("Divide error");
+                    }
+                    else{
+                        var c = a/b;
+                    }
+                    }   catch (e) {
+                            alert("Error : " + e.description);
+                        }
+                }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo">Browser Detection</p>
+    </body>
+    <script>
+        var u = navigator.userAgent;
+        console.log(u);
+        var opera = u.indexOf('Opera')!= -1;
+        var ie = u.indexOf('MSIE')!= -1;
+        var chrome = u.indexOf('Google Chrome')!= -1;
+        var mozilla = u.indexOf('Gecko')!= -1;
+        var version = navigator.appVersion;
+        if(opera){
+            document.write("Opera Browser");
+        }
+        else if(ie){
+            document.write("Internet Explorer");
+        }
+        else if(chrome){
+            document.write("Google Chrome");
+        }
+        else if(mozilla){
+            document.write("Mozilla Firefox");
+        }
+        else{
+            document.write("Unable to recognise");
+        }
+        document.write("<br>Browser version info : " + version);
+    </script>
+</html>

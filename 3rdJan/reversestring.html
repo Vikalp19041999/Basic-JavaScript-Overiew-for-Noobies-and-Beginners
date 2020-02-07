@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo">String Reverse</p>
+        <p>String : <input type="text" id="1"> </p><br>
+        <button onclick="stringReverse()">Reverse</button>
+        <script>
+            var x = document.getElementById("1");
+            function stringReverse(){
+                var s = x.value;
+                for(i=s.length-1;i<=0;i--){
+                    document.write(s);
+                }
+            }
+        </script>
+    </body>
+</html>
